@@ -14,7 +14,7 @@
 
         .seHome,
         .seLoja,
-        .seSobre,
+        .seFeedback,
         .seContato {
             padding: 0px 60px;
         }
@@ -30,12 +30,20 @@
             height: 480px;
         }
 
-        .seSobre {
-            background-color: rgb(255, 208, 0);
-            height: 350px;
-        }
+        .seFeedback {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centraliza verticalmente */
+    background-color: rgb(255, 208, 0);
+    height: 350px;
+                   }
 
         .seContato {
+            display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
             background-color: blue;
             height: 250px;
         }
@@ -135,6 +143,54 @@
     padding-bottom: 2px;
 }
 
+.contContato { 
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    text-align: start;
+    height: 100%
+}
+
+.contRedes {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    justify-content: flex-start;
+    text-align: left; 
+}
+
+.btnInscrever {
+    background-color: aliceblue;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.imgRedes > img {
+    border-radius: 50px;
+    margin-top: 2px;
+}
+
+.btnWpp {
+    width: 100%;
+    height: 37.6px;
+}
+
+.cardContato {
+    background-color: blueviolet;
+    height: 140px;
+}
+
+ul {
+    margin: 0;
+  list-style: none; /* Remove os marcadores */
+  padding: 0; /* Remove o espaçamento padrão */
+  margin: 0; /* Remove a margem padrão */
+}
+
+.contInsc {
+    margin-bottom: 0px;
+}
         
     </style>
 </head>
@@ -158,7 +214,7 @@
               <a class="nav-link" href="#">Loja<a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Sobre a empresa</a>
+              <a class="nav-link" href="#">Feedbacks</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Contatos</a>
@@ -184,7 +240,19 @@
 </div>
 </div>
 <div class="propa">
-    Testepropa
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="https://placehold.co/1140x24/EEE/31343C" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="https://placehold.co/1140x24/EEE/31343C" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="https://placehold.co/1140x24/EEE/31343C" alt="Third slide">
+          </div>
+        </div>
+      </div>
 </div>
 <div class="seLoja">
 <div class="row tabProdutos gap-5 justify-content-between">
@@ -193,24 +261,104 @@
             <h1>Nome</h1>
             <img src="https://placehold.co/250x300/EEE/31343C" alt="#">
             <div class="btCompra">
-                <button class="btatributo">+</button>
-                <h7>1</h7>
                 <button class="btatributo">-</button>
+                <h7>1</h7>
+                <button class="btatributo">+</button>
             </div>
             <button class="btn btn-dark" type="button" class="btCompra">
                 Adicionar no carrinho - $15,00
             </button>
         </div>
     </div>
-    <div class="col-4 prodt prodtCentral">teste</div>
-    <div class="col-4 prodt">teste</div>
+    <div class="col-4 prodt prodtCentral">
+        <div>
+            <h1>Nome</h1>
+            <img src="https://placehold.co/250x300/EEE/31343C" alt="#">
+            <div class="btCompra">
+                <button class="btatributo">-</button>
+                <h7>1</h7>
+                <button class="btatributo">+</button>
+            </div>
+            <button class="btn btn-dark" type="button" class="btCompra">
+                Adicionar no carrinho - $15,00
+            </button>
+        </div>
+    </div>
+    <div class="col-4 prodt">
+        <div>
+            <h1>Nome</h1>
+            <img src="https://placehold.co/250x300/EEE/31343C" alt="#">
+            <div class="btCompra">
+                <button class="btatributo">-</button>
+                <h7>1</h7>
+                <button class="btatributo">+</button>
+            </div>
+            <button class="btn btn-dark" type="button" class="btCompra">
+                Adicionar no carrinho - $15,00
+            </button>
+        </div>
+    </div>
   </div>
 </div>
-<div class="seSobre">
-    Sobre
+<div class="seFeedback">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="https://placehold.co/500x300/EEE/31343C" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="https://placehold.co/500x300/EEE/31343C" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="https://placehold.co/500x300/EEE/31343C" alt="Third slide">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </a>
+    </div>
 </div>
 <div class="seContato">
-    Contato
+    <div class="row cardContato">
+        <div class="col-4 contContato">
+            <h1>Café & chá</h1>
+            <p>100% NATURAL CHÁ & CAFÉ E O MELHOR GOSTO PARA SEU DIA A DIA</p>
+        </div>
+        <div class="col-4 contContato">
+            <ul>
+                <li>Café e chás</li>
+                <li>Novos sabores</li>
+                <li>Blog</li>
+                <li> <a href="">Contatos</a></li>
+            </ul>
+            <button type="button" class="btn btn-primary btnWpp">Pedir via WhatsApp</button>
+        </div>
+        <div class="col-4 contContato">
+            <div class="contRedes">
+                <h7>Seguir nas redes socias</h7>
+                <div class="imgRedes">
+                <img src="https://placehold.co/40x40/EEE/31343C" alt="">
+                <img src="https://placehold.co/40x40/EEE/31343C" alt="">
+                <img src="https://placehold.co/40x40/EEE/31343C" alt="">
+            </div>
+            </div>
+            <div class="contInsc">
+                <h7>Inscreva-se para receber novidades</h7>
+            </div>
+            <div class="btnInscrever d-flex justify-content-between">
+                <input type="email" class="form-control" placeholder="E-mail">
+                <button type="submit" class="btn btn-light">></button>
+            </div>
+        </div>
+    </div>
 </div>
 </div>
 
