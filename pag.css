@@ -1,0 +1,260 @@
+.container {
+    background-color: #FFECC0;
+    padding: 0px;
+    font-family: "Oranienbaum", serif;
+font-weight: 400;
+font-style: normal;
+}
+
+body {
+    background-color: #FFECC0;
+}
+
+.seHome,
+.seLoja,
+.seFeedback,
+.seContato {
+    padding: 0px 60px;
+}
+
+.seHome {
+    background-color: #96A755;
+    height: 520px;
+    
+}
+
+.seLoja {
+    background-color: #FFECC0;
+    height: 520px;
+    padding-top: 36px;
+}
+
+.seFeedback {
+display: flex;
+justify-content: center;
+align-items: center; /* Centraliza verticalmente */
+background-color: #FFECC0;
+height: 480px;
+width: 100%;
+}
+
+.seContato {
+    display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+    background-color: #96A755;
+    height: 250px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.navbar {
+ width: 1160px;
+ background-color: #FFECC0;
+ border-radius: 24px;
+ height:40px;
+ margin: 12px 12px 0px 12px;
+ padding: 0px 16px;
+}
+
+.nav {
+    justify-content: center;
+    background-color: #96A755;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.contHome {
+    display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+    height: 100%;
+}
+
+#btConteudoHome {
+    width: 200px;
+    border-radius: 30px;
+    font-family: "Domine", serif;
+font-optical-sizing: auto;
+font-weight: 400;
+font-style: normal;
+}
+
+.imgHome {
+    background-image: url("./Img/imgHome.png");
+    background-size: cover; 
+    background-position: center;  
+    border-radius: 24px;
+}
+
+
+.row {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    height: 440px;
+}
+
+.textConteudo {
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+padding-right: 150px;
+padding-left: 0px;
+height: 100%;
+}
+
+.textConteudo,
+.prodt,
+.btCompra {
+font-family: "Inter", serif;
+font-optical-sizing: auto;
+font-weight: 700;
+font-style: normal;
+}
+
+.btCompra button {
+font-family: "Inter", serif;
+font-optical-sizing: auto;
+font-weight: 700;
+font-style: normal;
+}
+
+.textConteudo p {
+font-family: "Inter", serif;
+font-optical-sizing: auto;
+font-weight: 400;
+font-style: normal;
+}
+
+.propa {
+background-color: aliceblue;
+width: 100%;
+height: 40px;
+}
+
+.tabProdutos {
+padding: 8px;
+height: 100%;
+}
+
+.prodt {
+height: 100%;
+border-radius: 20px;
+width: 340px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+padding: 16px;
+border: 1px solid black;
+}
+
+.prodtCentral {
+margin-inline: 8px;
+}
+
+.btCompra, .btn-dark {
+margin-top: 8px;
+width: 100%;
+border-radius: 16px;
+}
+
+.btCompra {
+display: flex;
+justify-content: space-between;
+border: 1px solid black;
+padding: 0px 10px;
+}
+
+.btatributo {
+border: 0px;
+background-color: transparent;
+height: 100%;
+padding-bottom: 2px;
+}
+
+.contContato { 
+display: flex;
+flex-direction: column;
+align-items: start;
+justify-content: space-between;
+text-align: start;
+height: 100%
+}
+
+.contRedes {
+display: flex;
+flex-direction: column;
+align-items: flex-start; 
+justify-content: flex-start;
+text-align: left; 
+}
+
+.btnInscrever {
+background-color: aliceblue;
+border-radius: 8px;
+width: 100%;
+}
+
+.imgRedes > img {
+border-radius: 50px;
+margin-top: 2px;
+}
+
+.btnWpp {
+width: 100%;
+height: 37.6px;
+}
+
+.cardContato {
+height: 140px;
+}
+
+ul {
+margin: 0;
+list-style: none; /* Remove os marcadores */
+padding: 0; /* Remove o espaçamento padrão */
+margin: 0; /* Remove a margem padrão */
+}
+
+.contInsc {
+margin-bottom: 0px;
+}
+
+.carousel-inner {
+    height: 400px;
+    width: 600px;
+    border-radius: 8px;
+}
+
+.carousel-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; 
+}
+
+
+.produtos {
+height: 100%;
+width: 100%;
+}
+
+.imgProdutos {
+height: 300px;
+width: 100%;
+}
+
+.imgProdutos img {
+width: 100%; 
+height: 100%; 
+width: 250px;
+object-fit: cover;
+display: block;
+margin: 0 auto; 
+}

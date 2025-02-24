@@ -7,262 +7,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oranienbaum&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="./pag.css"/>
     <title>Document</title>
-
-    <style>
-        .container {
-            background-color: #FFECC0;
-            padding: 0px;
-            font-family: "Oranienbaum", serif;
-  font-weight: 400;
-  font-style: normal;
-        }
-
-        body {
-            background-color: #FFECC0;
-        }
-
-        .seHome,
-        .seLoja,
-        .seFeedback,
-        .seContato {
-            padding: 0px 60px;
-        }
-
-        .seHome {
-            background-color: #96A755;
-            height: 520px;
-            
-        }
-
-        .seLoja {
-            background-color: #FFECC0;
-            height: 520px;
-            padding-top: 36px;
-        }
-
-        .seFeedback {
-    display: flex;
-    justify-content: center;
-    align-items: center; /* Centraliza verticalmente */
-    background-color: #FFECC0;
-    height: 480px;
-    width: 100%;
-    }
-
-        .seContato {
-            display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-            background-color: #96A755;
-            height: 250px;
-            border-bottom-left-radius: 20px;
-            border-bottom-right-radius: 20px;
-        }
-        
-        .navbar {
-         width: 1160px;
-         background-color: #FFECC0;
-         border-radius: 24px;
-         height:40px;
-         margin: 12px 12px 0px 12px;
-         padding: 0px 16px;
-        }
-
-        .nav {
-            justify-content: center;
-            background-color: #96A755;
-            border-top-left-radius: 20px;
-            border-top-right-radius: 20px;
-        }
-
-        .contHome {
-            display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  
-            height: 100%;
-        }
-        
-        #btConteudoHome {
-            width: 200px;
-            border-radius: 30px;
-            font-family: "Domine", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-        }
-
-        .imgHome {
-            background-image: url("/imgHome.png");
-            background-size: cover; 
-            background-position: center;  
-            border-radius: 24px;
-        }
-
-
-        .row {
-            width: 100%;
-            margin: 0px;
-            padding: 0px;
-            height: 440px;
-        }
-
-        .textConteudo {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    padding-right: 150px;
-    padding-left: 0px;
-    height: 100%;
-}
-
-.textConteudo,
-.prodt,
-.btCompra {
-    font-family: "Inter", serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.btCompra button {
-    font-family: "Inter", serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.textConteudo p {
-    font-family: "Inter", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.propa {
-    background-color: aliceblue;
-    width: 100%;
-    height: 40px;
-}
-
-.tabProdutos {
-    padding: 8px;
-    height: 100%;
-}
-
-.prodt {
-    height: 100%;
-    border-radius: 20px;
-    width: 340px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 16px;
-    border: 1px solid black;
-}
-
-.prodtCentral {
-  margin-inline: 8px;
-}
-
-.btCompra, .btn-dark {
-    margin-top: 8px;
-    width: 100%;
-    border-radius: 16px;
-}
-
-.btCompra {
-    display: flex;
-    justify-content: space-between;
-    border: 1px solid black;
-    padding: 0px 10px;
-}
-
-.btatributo {
-    border: 0px;
-    background-color: transparent;
-    height: 100%;
-    padding-bottom: 2px;
-}
-
-.contContato { 
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: space-between;
-    text-align: start;
-    height: 100%
-}
-
-.contRedes {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; 
-    justify-content: flex-start;
-    text-align: left; 
-}
-
-.btnInscrever {
-    background-color: aliceblue;
-    border-radius: 8px;
-    width: 100%;
-}
-
-.imgRedes > img {
-    border-radius: 50px;
-    margin-top: 2px;
-}
-
-.btnWpp {
-    width: 100%;
-    height: 37.6px;
-}
-
-.cardContato {
-    height: 140px;
-}
-
-ul {
-    margin: 0;
-  list-style: none; /* Remove os marcadores */
-  padding: 0; /* Remove o espaçamento padrão */
-  margin: 0; /* Remove a margem padrão */
-}
-
-.contInsc {
-    margin-bottom: 0px;
-}
-
-.ImgNov {
-    height:300px;
-    width: 500px;
-}
-
-.produtos {
-    height: 100%;
-    width: 100%;
-}
-
-.imgProdutos {
-    height: 300px;
-    width: 100%;
-}
-
-.imgProdutos img {
-    width: 100%; 
-    height: 100%; 
-    width: 250px;
-    object-fit: cover;
-    display: block;
-    margin: 0 auto; 
-}
-
         
     </style>
 </head>
@@ -333,7 +79,7 @@ ul {
         <div class="produtos">
             <h1>Nome</h1>
             <div class="imgProdutos">
-                <img src="/prot1.png" alt="#">
+                <img src="./Img/prot1.png" alt="#">
             </div>
             <div class="btCompra">
                 <button class="btatributo">-</button>
@@ -349,7 +95,7 @@ ul {
         <div class="produtos">
             <h1>Nome</h1>
             <div class="imgProdutos">
-                <img src="/prot2.png" alt="#">
+                <img src="./Img/prot2.png" alt="#">
             </div>
             <div class="btCompra">
                 <button class="btatributo">-</button>
@@ -365,7 +111,7 @@ ul {
         <div class="produtos">
             <h1>Nome</h1>
             <div class="imgProdutos">
-                <img src="/prot3.png" alt="#">
+                <img src="./Img/prot3.png" alt="#">
             </div>
             <div class="btCompra">
                 <button class="btatributo">-</button>
@@ -380,17 +126,16 @@ ul {
   </div>
 </div>
 <div class="seFeedback">
-    <div class="ImgNov">
         <div id="carouselNov" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div data-bs-interval="3000" class="carousel-item active">
-                <img class="d-block w-100" src="/slide2.png" alt="First slide">
+                <img class="d-block w-100" src="./Img/slide1.png" alt="First slide">
               </div>
               <div data-bs-interval="3000" class="carousel-item">
-                <img class="d-block w-100" src="/slide2.png" alt="Second slide">
+                <img class="d-block w-100" src="./Img/slide2.png" alt="Second slide">
               </div>
               <div data-bs-interval="3000" class="carousel-item">
-                <img class="d-block w-100" src="/slide2.png" alt="Third slide">
+                <img class="d-block w-100" src="./Img/slide3.png" alt="Third slide">
               </div>
             </div>
             <button class="carousel-control-prev" data-bs-target="#carouselNov" data-bs-slide="prev" type="button">
@@ -404,7 +149,6 @@ ul {
                 <button type="button" data-bs-target="#carouselNov" data-bs-slide-to="1"></button>
                 <button type="button" data-bs-target="#carouselNov" data-bs-slide-to="2"></button>
               </div>
-          </div>
     </div>
 </div>
 <div class="seContato">
