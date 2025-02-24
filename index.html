@@ -3,13 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oranienbaum&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./bootstrap.min.css"/>
     <title>Document</title>
 
     <style>
         .container {
-            background-color: antiquewhite;
+            background-color: #FFECC0;
             padding: 0px;
+            font-family: "Oranienbaum", serif;
+  font-weight: 400;
+  font-style: normal;
+        }
+
+        body {
+            background-color: #FFECC0;
         }
 
         .seHome,
@@ -20,23 +30,25 @@
         }
 
         .seHome {
-            background-color: green;
-            height: 330px;
+            background-color: #96A755;
+            height: 520px;
             
         }
 
         .seLoja {
-            background-color: blue;
-            height: 480px;
+            background-color: #FFECC0;
+            height: 520px;
+            padding-top: 36px;
         }
 
         .seFeedback {
     display: flex;
     justify-content: center;
     align-items: center; /* Centraliza verticalmente */
-    background-color: rgb(255, 208, 0);
-    height: 350px;
-                   }
+    background-color: #FFECC0;
+    height: 480px;
+    width: 100%;
+    }
 
         .seContato {
             display: flex;
@@ -44,38 +56,51 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-            background-color: blue;
+            background-color: #96A755;
             height: 250px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
         }
         
         .navbar {
          width: 1160px;
-         background-color: white;
+         background-color: #FFECC0;
          border-radius: 24px;
          height:40px;
-         margin: 12px;
+         margin: 12px 12px 0px 12px;
          padding: 0px 16px;
         }
 
         .nav {
             justify-content: center;
-            background-color: green;
+            background-color: #96A755;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
         }
 
         .contHome {
+            display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
             height: 100%;
-            padding-top: 20px;
         }
         
         #btConteudoHome {
             width: 200px;
             border-radius: 30px;
+            font-family: "Domine", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
         }
 
         .imgHome {
-            background-color: black;
+            background-image: url("/imgHome.png");
+            background-size: cover; 
+            background-position: center;  
             border-radius: 24px;
-            padding: 80px;
         }
 
 
@@ -83,7 +108,7 @@
             width: 100%;
             margin: 0px;
             padding: 0px;
-            height: 290px;
+            height: 440px;
         }
 
         .textConteudo {
@@ -95,18 +120,42 @@
     height: 100%;
 }
 
+.textConteudo,
+.prodt,
+.btCompra {
+    font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.btCompra button {
+    font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.textConteudo p {
+    font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .propa {
     background-color: aliceblue;
     width: 100%;
+    height: 40px;
 }
 
 .tabProdutos {
     padding: 8px;
+    height: 100%;
 }
 
 .prodt {
-    background-color: aliceblue;
-    height: 440px;
+    height: 100%;
     border-radius: 20px;
     width: 340px;
     display: flex;
@@ -115,7 +164,6 @@
     justify-content: center;
     text-align: center;
     padding: 16px;
-    padding-bottom: 30px;
     border: 1px solid black;
 }
 
@@ -177,7 +225,6 @@
 }
 
 .cardContato {
-    background-color: blueviolet;
     height: 140px;
 }
 
@@ -191,6 +238,31 @@ ul {
 .contInsc {
     margin-bottom: 0px;
 }
+
+.ImgNov {
+    height:300px;
+    width: 500px;
+}
+
+.produtos {
+    height: 100%;
+    width: 100%;
+}
+
+.imgProdutos {
+    height: 300px;
+    width: 100%;
+}
+
+.imgProdutos img {
+    width: 100%; 
+    height: 100%; 
+    width: 250px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto; 
+}
+
         
     </style>
 </head>
@@ -214,7 +286,7 @@ ul {
               <a class="nav-link" href="#">Loja<a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Feedbacks</a>
+              <a class="nav-link" href="#">Novidades</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Contatos</a>
@@ -234,22 +306,23 @@ ul {
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum et voluptates quas corporis iure voluptatum officiis hic dolor. Ex, illo nisi voluptas saepe consequuntur quos vitae perspiciatis fugit dolorem nostrum!</p>
             <button class="btn btn-primary" type="button" id="btConteudoHome">Comprar produtos</button>
         </div>
-        <div class="col-7 imgHome">col-4</div>
+        <div class="col-7 imgHome">
+        </div>
 </div>
 </div>
 </div>
 </div>
 <div class="propa">
-    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img class="d-block w-100" src="https://placehold.co/1140x24/EEE/31343C" alt="First slide">
+          <div data-bs-interval="3000" class="carousel-item active">
+            <img class="d-block w-100" src="https://placehold.co/1140x40/EEE/31343C" alt="First slide">
           </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="https://placehold.co/1140x24/EEE/31343C" alt="Second slide">
+          <div data-bs-interval="3000" class="carousel-item">
+            <img class="d-block w-100" src="https://placehold.co/1140x40/EEE/31343C" alt="Second slide">
           </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="https://placehold.co/1140x24/EEE/31343C" alt="Third slide">
+          <div data-bs-interval="3000" class="carousel-item">
+            <img class="d-block w-100" src="https://placehold.co/1140x40/EEE/31343C" alt="Third slide">
           </div>
         </div>
       </div>
@@ -257,9 +330,11 @@ ul {
 <div class="seLoja">
 <div class="row tabProdutos gap-5 justify-content-between">
     <div class="col-4 prodt">
-        <div>
+        <div class="produtos">
             <h1>Nome</h1>
-            <img src="https://placehold.co/250x300/EEE/31343C" alt="#">
+            <div class="imgProdutos">
+                <img src="/prot1.png" alt="#">
+            </div>
             <div class="btCompra">
                 <button class="btatributo">-</button>
                 <h7>1</h7>
@@ -271,9 +346,11 @@ ul {
         </div>
     </div>
     <div class="col-4 prodt prodtCentral">
-        <div>
+        <div class="produtos">
             <h1>Nome</h1>
-            <img src="https://placehold.co/250x300/EEE/31343C" alt="#">
+            <div class="imgProdutos">
+                <img src="/prot2.png" alt="#">
+            </div>
             <div class="btCompra">
                 <button class="btatributo">-</button>
                 <h7>1</h7>
@@ -285,9 +362,11 @@ ul {
         </div>
     </div>
     <div class="col-4 prodt">
-        <div>
+        <div class="produtos">
             <h1>Nome</h1>
-            <img src="https://placehold.co/250x300/EEE/31343C" alt="#">
+            <div class="imgProdutos">
+                <img src="/prot3.png" alt="#">
+            </div>
             <div class="btCompra">
                 <button class="btatributo">-</button>
                 <h7>1</h7>
@@ -301,29 +380,31 @@ ul {
   </div>
 </div>
 <div class="seFeedback">
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img class="d-block w-100" src="https://placehold.co/500x300/EEE/31343C" alt="First slide">
+    <div class="ImgNov">
+        <div id="carouselNov" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div data-bs-interval="3000" class="carousel-item active">
+                <img class="d-block w-100" src="/slide2.png" alt="First slide">
+              </div>
+              <div data-bs-interval="3000" class="carousel-item">
+                <img class="d-block w-100" src="/slide2.png" alt="Second slide">
+              </div>
+              <div data-bs-interval="3000" class="carousel-item">
+                <img class="d-block w-100" src="/slide2.png" alt="Third slide">
+              </div>
+            </div>
+            <button class="carousel-control-prev" data-bs-target="#carouselNov" data-bs-slide="prev" type="button">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              </button>
+              <button class="carousel-control-next" data-bs-target="#carouselNov" data-bs-slide="next" type="button">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              </button>
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselNov" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#carouselNov" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carouselNov" data-bs-slide-to="2"></button>
+              </div>
           </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="https://placehold.co/500x300/EEE/31343C" alt="Second slide">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="https://placehold.co/500x300/EEE/31343C" alt="Third slide">
-          </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        </a>
     </div>
 </div>
 <div class="seContato">
@@ -363,5 +444,6 @@ ul {
 </div>
 
 <script src="./bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
