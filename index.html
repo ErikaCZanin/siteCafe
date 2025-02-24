@@ -29,7 +29,7 @@
               <a class="nav-link" href="#home">Inicio<span class="sr-only"></span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#seLoja">Loja<a>
+              <a class="nav-link" href="#seLoja">Loja</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#seNov">Novidades</a>
@@ -77,49 +77,49 @@
 <div class="seLoja" id="seLoja">
 <div class="row tabProdutos gap-5 justify-content-between">
     <div class="col-4 prodt">
-        <div class="produtos">
-            <h1>Nome</h1>
+        <div class="produto">
+            <h1>Chás da terra</h1>
             <div class="imgProdutos">
                 <img src="./Img/prot1.png" alt="#">
             </div>
             <div class="btCompra">
-                <button class="btatributo">-</button>
+                <button class="btatributo remover-carrinho">-</button>
                 <h7>1</h7>
-                <button class="btatributo">+</button>
+                <button class="btatributo adicionar-carrinho">+</button>
             </div>
-            <button class="btn btn-dark" type="button" class="btCompra">
+            <button class="btn btn-dark" type="button">
                 Adicionar no carrinho - $15,00
             </button>
         </div>
     </div>
     <div class="col-4 prodt prodtCentral">
-        <div class="produtos">
-            <h1>Nome</h1>
+        <div class="produto">
+            <h1>Café do Serrado</h1>
             <div class="imgProdutos">
                 <img src="./Img/prot2.png" alt="#">
             </div>
             <div class="btCompra">
                 <button class="btatributo">-</button>
                 <h7>1</h7>
-                <button class="btatributo">+</button>
+                <button class="btatributo adicionar-carrinho">+</button>
             </div>
-            <button class="btn btn-dark" type="button" class="btCompra">
+            <button class="btn btn-dark" type="button">
                 Adicionar no carrinho - $15,00
             </button>
         </div>
     </div>
     <div class="col-4 prodt">
-        <div class="produtos">
-            <h1>Nome</h1>
+        <div class="produto">
+            <h1>Chá & café</h1>
             <div class="imgProdutos">
                 <img src="./Img/prot3.png" alt="#">
             </div>
             <div class="btCompra">
                 <button class="btatributo">-</button>
                 <h7>1</h7>
-                <button class="btatributo">+</button>
+                <button class="btatributo adicionar-carrinho">+</button>
             </div>
-            <button class="btn btn-dark" type="button" class="btCompra">
+            <button class="btn btn-dark" type="button">
                 Adicionar no carrinho - $15,00
             </button>
         </div>
@@ -160,35 +160,56 @@
         </div>
         <div class="col-4 contContato">
             <ul>
-                <li>Café e chás</li>
-                <li>Novos sabores</li>
-                <li>Blog</li>
+                <li> <a href="">Café e chás</a></li>
+                <li> <a href="">Novos sabores</a></li>
+                <li> <a href="">Blog</a></li>
                 <li> <a href="">Contatos</a></li>
             </ul>
             <button type="button" class="btn btn-primary btnWpp">Pedir via WhatsApp</button>
         </div>
         <div class="col-4 contContato">
-            <div class="contRedes">
-                <h7>Seguir nas redes socias</h7>
-                <div class="imgRedes">
-                <img src="https://placehold.co/40x40/EEE/31343C" alt="">
-                <img src="https://placehold.co/40x40/EEE/31343C" alt="">
-                <img src="https://placehold.co/40x40/EEE/31343C" alt="">
+          <div class="contRedes">
+            <h7>Seguir nas redes sociais</h7>
+            <div class="imgRedes">
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="./Img/lFace.png" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="./Img/lInsta.png" alt="Instagram">
+                </a>
+                <a href="https://www.youtube.com" target="_blank">
+                    <img src="./Img/lyout.png" alt="YouTube">
+                </a>
             </div>
-            </div>
+        </div>
             <div class="contInsc">
                 <h7>Inscreva-se para receber novidades</h7>
             </div>
             <div class="btnInscrever d-flex justify-content-between">
                 <input type="email" class="form-control" placeholder="E-mail">
-                <button type="submit" class="btn btn-light">></button>
+                <button type="submit" class="btn btn-light" id="submit-button">></button>
             </div>
         </div>
     </div>
 </div>
 </div>
 
-<script src="./bootstrap.bundle.min.js"></script>
+<div class="floating-icon">
+  <h3>Quantidade: <strong id="quantidade">0</strong></h3>
+  <div class="botoes-carrinho">
+  <img src="./Img/carrinho-de-compras.png" alt="">
+  <img id="limpar" src="./Img/excluir.png" alt="">
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/messages_pt_BR.min.js"></script>
+    <script src="./js/main.js"></script>
 
 </body>
 </html>
