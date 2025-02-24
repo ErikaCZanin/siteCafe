@@ -20,7 +20,12 @@ body {
 .seHome {
     background-color: #96A755;
     height: 520px;
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .seLoja {
@@ -36,6 +41,8 @@ align-items: center; /* Centraliza verticalmente */
 background-color: #FFECC0;
 height: 480px;
 width: 100%;
+clear: both; /* Garante que nada flutue ao lado */
+margin-top: 20px; /* Adiciona um espaço entre os elementos */
 }
 
 .seContato {
@@ -68,12 +75,13 @@ text-align: center;
 
 .contHome {
     display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     height: 100%;
 }
+
+
 
 #btConteudoHome {
     width: 200px;
@@ -94,9 +102,9 @@ font-style: normal;
 
 .row {
     width: 100%;
+    height: 100%;
     margin: 0px;
     padding: 0px;
-    height: 440px;
 }
 
 .textConteudo {
@@ -143,7 +151,6 @@ height: 100%;
 }
 
 .prodt {
-height: 100%;
 border-radius: 20px;
 width: 340px;
 display: flex;
@@ -239,6 +246,17 @@ margin-bottom: 0px;
     object-fit: cover; 
 }
 
+.carouselPropa {
+    height: 40px;
+    width: 1140px;
+    border-radius: 8px;
+}
+
+.carouselPropa {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; 
+}
 
 .produtos {
 height: 100%;
@@ -253,8 +271,9 @@ width: 100%;
 .imgProdutos img {
 width: 100%; 
 height: 100%; 
-width: 250px;
 object-fit: cover;
 display: block;
 margin: 0 auto; 
 }
+
+
