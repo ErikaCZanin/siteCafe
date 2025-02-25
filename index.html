@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oranienbaum&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./bootstrap.min.css"/>
-    <link rel="stylesheet" type="text/css" href="./pag.css"/>
+    <link rel="stylesheet" type="text/css" href="./main.css"/>
     <title>Document</title>
         
     </style>
@@ -29,19 +29,21 @@
               <a class="nav-link" href="#home">Inicio<span class="sr-only"></span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#seLoja">Loja</a>
+              <a class="nav-link" href="#btConteudoHome">Loja</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#seNov">Novidades</a>
+              <a class="nav-link" href="#btCompra">Novidades</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#seContato">Contatos</a>
             </li>
           </ul>
         </div>
-        <div>
-        teste
-        </div>
+        <div class="iconCesto">
+          <a href="#btConteudoHome">
+              <img src="./Img/iconcesto.png" alt="Ícone do cesto">
+          </a>
+      </div>
       </nav>
     </div>
 <div class="seHome" id="seHome">
@@ -98,7 +100,7 @@
             <div class="imgProdutos">
                 <img src="./Img/prot2.png" alt="#">
             </div>
-            <div class="btCompra">
+            <div class="btCompra" id="btCompra">
                 <button class="btatributo remover-carrinho">-</button>
                 <span>1</span>
                 <button class="btatributo incrementar">+</button>

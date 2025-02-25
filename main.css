@@ -1,13 +1,14 @@
 .container {
-    background-color: #FFECC0;
+    background-color: #F1DAAE;
     padding: 0px;
-    font-family: "Oranienbaum", serif;
+    font-family: "Inter", serif;
 font-weight: 400;
 font-style: normal;
+border-radius: 24px;
 }
 
 body {
-    background-color: #FFECC0;
+    background-color: #432719;
 }
 
 .seHome,
@@ -18,7 +19,7 @@ body {
 }
 
 .seHome {
-    background-color: #96A755;
+    background-color: #A05035;
     height: 520px;
     display: flex;
     flex-direction: column;
@@ -26,30 +27,34 @@ body {
     justify-content: center;
     padding-top: 30px;
     padding-bottom: 30px;
+    color: rgb(228, 228, 228);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
 }
 
 .seLoja {
-    background-color: #FFECC0;
+    background-color: #F1DAAE;
     height: auto;
     padding-top: 36px;
+    padding-bottom: 36px;
 }
 
 .seFeedback {
 display: flex;
 justify-content: center;
 align-items: center; 
-background-color: #FFECC0;
+background-color: #A56734;
 height: auto;
 width: 100%;
 clear: both; 
-margin-top: 20px;
-margin-bottom: 20px;
+padding-top: 20px;
+padding-bottom: 20px;
 }
 
 .carouselNov {
     margin: 16px;
     height: 300px;
     width: 500px;
+    border-radius: 8px;
 }
 
 .seContato {
@@ -58,10 +63,11 @@ flex-direction: column;
 align-items: center;
 justify-content: center;
 text-align: center;
-    background-color: #96A755;
+    background-color: #A05035;
     height: 250px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+    color: rgb(228, 228, 228);
 }
 
 .navbar {
@@ -77,13 +83,19 @@ text-align: center;
  padding: 0px 34px;
 }
 
+
+.contContato h1 {
+    color: rgb(228, 228, 228);
+    text-shadow: 8px 12px 4px rgba(21, 61, 30, 0.7); /* Sombra escura para destacar */
+}
+
 .navbar h1 {
-    margin: 0px;
+    margin: 2px;
 }
 
 .nav {
     justify-content: center;
-    background-color: #96A755;
+    background-color: #A05035;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
@@ -239,9 +251,21 @@ height: 40px;
 width: 40px;
 }
 
+.imgRedes a {
+    text-decoration: none;
+}
+
 .btnWpp {
 width: 100%;
 height: 37.6px;
+background-color: #182713;
+border-color: #182713;
+}
+
+
+.btnWpp:hover{
+    background-color: #3b612f;
+    border-color: #182713;
 }
 
 .cardContato {
@@ -301,10 +325,13 @@ margin: 0 auto;
     right: 70px; 
     bottom: 120px; 
     z-index: 1000;
-    background-color: #96A755;
+    background-color: #A05035;
     padding: 8px 16px;
     border-radius: 8px;
     text-align: center;
+    border: 0.2px solid black;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
 }
 
 .floating-icon h3 {
@@ -356,6 +383,16 @@ margin: 0 auto;
 
 .prodt img:hover {
     transform: scale(1.15);
+}
+
+.iconCesto {
+    height: 30px;
+    width: 30px;
+}
+
+.iconCesto img {
+    width: 100%;
+    height: 100%;
 }
 
 
