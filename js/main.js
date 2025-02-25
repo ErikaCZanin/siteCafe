@@ -6,20 +6,20 @@ $(document).ready(function () {
 
     $('.produto').each(function () {
         const produto = $(this);
-        const quantidadeElemento = produto.find('.btCompra span'); // Mudamos para <span>
-        let quantidade = parseInt(quantidadeElemento.text()) || 1;
+        const quantidadeElementoProduto = produto.find('.btCompra span'); // Corrigido o nome da variável
+        let quantidade = parseInt(quantidadeElementoProduto.text()) || 1;
 
         // Botão de aumentar quantidade
         produto.find('.incrementar').click(function () {
             quantidade++;
-            quantidadeElemento.text(quantidade);
+            quantidadeElementoProduto.text(quantidade);
         });
 
         // Botão de diminuir quantidade
         produto.find('.remover-carrinho').click(function () {
             if (quantidade > 1) {
                 quantidade--;
-                quantidadeElemento.text(quantidade);
+                quantidadeElementoProduto.text(quantidade);
             }
         });
 
@@ -39,5 +39,10 @@ $(document).ready(function () {
 
         // Reseta todos os spans de quantidade para 1
         $('.produto .btCompra span').text('1');
+    });
+
+    // Adicionando e removendo a classe 'ativo' nos botões de favorito
+    $(".btnFavorito").click(function () {
+        $(this).toggleClass("ativo");
     });
 });
