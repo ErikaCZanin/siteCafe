@@ -166,16 +166,19 @@ height: 100%;
 }
 
 .prodt {
-border-radius: 20px;
-width: 340px;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-text-align: center;
-padding: 16px;
-border: 1px solid black;
+    border-radius: 20px;
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 16px;
+    border: 0.2px solid black;
+    position: relative; /* Garante que o destaque não afete outros elementos */
+    overflow: hidden; /* Evita que o efeito ultrapasse os limites */
 }
+
 
 .prodtCentral {
 margin-inline: 8px;
@@ -301,6 +304,7 @@ margin: 0 auto;
     background-color: #96A755;
     padding: 8px 16px;
     border-radius: 8px;
+    text-align: center;
 }
 
 .floating-icon h3 {
@@ -310,17 +314,48 @@ margin: 0 auto;
 
 .botoes-carrinho {
     display: none;
-    justify-content: space-between;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    gap: 10px; /* Espaço entre os botões */
     margin-top: 8px;
     cursor: pointer;
-    margin-left: 8px;
+    width: 100%; /* Ocupa toda a largura do contêiner pai */
 }
 
+
 .botoes-carrinho img {
-    justify-content: space-between;
-    width: 40px;
-    height: 40px;
-    margin: 8px;
+    width: 50px;
+    height: 50px;
+    margin: 16px;
+}
+
+.prot1 {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%; /* Mantém o tamanho fixo */
+}
+
+.prot1:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 10; /* Destaca apenas o item com hover */
+}
+
+.prodt {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.prodt img{
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.prodt:hover {
+    transform: scale(1.05); /* Aumenta levemente o tamanho */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra para destaque */
+}
+
+.prodt img:hover {
+    transform: scale(1.15);
 }
 
 

@@ -1,72 +1,43 @@
-$(document).ready(function() {
-    const quantidadeElemento = document.getElementById('quantidade');
+$(document).ready(function () {
+    const quantidadeElemento = $('#quantidade');
     const botoesCarrinho = $('.botoes-carrinho');
-    
-    let quantidade = parseInt(quantidadeElemento.textContent) || 0;
 
-    // Captura todos os botões "Adicionar ao carrinho"
-    document.querySelectorAll('.adicionar-carrinho').forEach(button => {
-        button.addEventListener('click', () => {
-            quantidade++;
-            quantidadeElemento.textContent = quantidade;
-            botoesCarrinho.slideDown(); 
-        });
-    });
+    let quantidadeCarrinho = 0; // Quantidade total no carrinho
 
-    // Captura todos os botões "Remover do carrinho"
-    document.querySelectorAll('.remover-carrinho').forEach(button => {
-        button.addEventListener('click', () => {
-            if (quantidade > 0) {
-                quantidade--;
-                quantidadeElemento.textContent = quantidade;
-                
-                if (quantidade === 0) {
-                    botoesCarrinho.slideUp();
-                }
-            }
-        });
-    });
-
-    // Evento de clique para limpar o carrinho
-    $('#limpar').click(function() {
-        quantidade = 0;
-        quantidadeElemento.textContent = quantidade; 
-        botoesCarrinho.slideUp(); 
-    });
-
-    // Função para validar e-mail
-    function validateEmail(email) {
-        const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        return regex.test(email);
-    }
-    
-    // Validação do e-mail ao clicar no botão de envio
-    $('#submit-button').click(function() {
-        const email = $('#email').val();
-        if (validateEmail(email)) {
-            alert('E-mail válido!');
-        } else {
-            alert('E-mail inválido!');
-        }
-    });
-
-    $('.produto').each(function() {
+    $('.produto').each(function () {
         const produto = $(this);
-        const quantidadeElemento = produto.find('.btCompra h7'); // Captura o <h7> específico do produto
-        let quantidade = parseInt(quantidadeElemento.text()) || 1; // Obtém o valor atual
+        const quantidadeElemento = produto.find('.btCompra span'); // Mudamos para <span>
+        let quantidade = parseInt(quantidadeElemento.text()) || 1;
 
-        // Adicionar ao carrinho
-        produto.find('.adicionar-carrinho').click(function() {
+        // Botão de aumentar quantidade
+        produto.find('.incrementar').click(function () {
             quantidade++;
             quantidadeElemento.text(quantidade);
         });
 
-        // Remover do carrinho
-        produto.find('.remover-carrinho').click(function() {
-            if (quantidade > 1) { // Impede que a quantidade fique menor que 1
+        // Botão de diminuir quantidade
+        produto.find('.remover-carrinho').click(function () {
+            if (quantidade > 1) {
                 quantidade--;
                 quantidadeElemento.text(quantidade);
             }
         });
+
+        // Adicionar ao carrinho
+        produto.find('.adicionar-carrinho').click(function () {
+            quantidadeCarrinho += quantidade;
+            $('#quantidade').text(quantidadeCarrinho);
+            botoesCarrinho.slideDown();
+        });
+    });
+
+    // Evento de clique para limpar o carrinho
+    $('#limpar').click(function () {
+        quantidadeCarrinho = 0;
+        $('#quantidade').text(quantidadeCarrinho);
+        botoesCarrinho.slideUp();
+
+        // Reseta todos os spans de quantidade para 1
+        $('.produto .btCompra span').text('1');
     });
 });
