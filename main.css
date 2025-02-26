@@ -13,7 +13,7 @@ body {
 
 .seHome,
 .seLoja,
-.seFeedback,
+.seNov,
 .seContato {
     padding: 0px 60px;
 }
@@ -38,7 +38,7 @@ body {
     padding-bottom: 36px;
 }
 
-.seFeedback {
+.seNov {
 display: flex;
 justify-content: center;
 align-items: center; 
@@ -534,7 +534,7 @@ height: auto;
         object-fit: cover; 
     }
 
-    .seFeedback {
+    .seNov {
         padding: 0px;
         padding-top: 40px;
         padding-bottom: 40px;
